@@ -1,48 +1,178 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>AstonFitness</title>
-    </head>
-    <body>
-        <h1>Aston Fitness</h1>
-        <header id = "Aston Fitness">
-
-            <form input ="User And Pass">
-                <label for="Username"> Please input a Username: </label><br>
-                <input type="text" id="User" name="User">
-            <br>
-                <labael for="Password">Please input a Password: </label><br>
-                <input type="text" id="Pass" name="User"><br><br>
-
-                <input type="submit" id="nameNpass" name="nameNpass"><br>
-            </form>
-        </header> 
-
-        <div id = "Call To Action"></header>
-            <h2>
-                 Excercise Smarter. Not Harder.
-            </h2>
-            We give you the information that you need to make the best choices about your
-            fitness<br><br>
-        </header>
-
-        <a href = "SignUp.html"><button>Sign Up Now!</button></a>
-        </div>
-
-        <div class ="benefit">
-            <h2>Why Join Up?</h2>
-            Learn to manage your fitness<br><br>
-            Share your progress with friends<br><br>
-            Get personalised feedback and encouragement<br><br>
-        </div>
-
-    <div id = "testimonial">
-        <h2>What Our Users Say About Us</h2>
-        "It's great to learn about fitness and challenge my friends” - Alice<br>
-        <br>“It really motivated me and gave me personalised recommendations” - Bob
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Isobel Davies </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
     </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="Pinterest" onclick="showpinterest()" class="animated fadeIn" style="animation-delay:2.2s;">Pinterest Options</a>
+    <a id="book" onclick="showbooks()" class="animated fadeIn" style="animation-delay:2.2s;">Book Options</a>
+    <a id="fun" onclick="showfun()" class="animated fadeIn" style="animation-delay:2.2s;">Coding Help</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Isobel's Personal ySite</h1>
+        <h2> Engineer / Book Read / Cat Lover</h2>
+        <div id="menu">
+            <a onclick="showpinterest()">Pinterest</a>
+            <a onclick="showbooks()">Book Options</a>
+            <a onclick="showfun()">fun</a>
 
 
-    </body>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook" onclick="window.open('https://www.facebook.com')"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter" onclick="window.open('https://twitter.com/home')"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram" onclick="window.open('https://www.instagram.com')"></i></a></td>
+                   
+                </tr>
+        </table>
+    </div>
+    <div id="book_container" class="container">
+        <div onclick="closebook()"><i class="fas fa-angle-right"></i></div>
+        <h1>books.</h1>
+        <section>
+            <h2>A place to manage books</h2>
+            <p>
+                “There is no charm equal to tenderness of heart.” - Emma, 1815<br><br>
+                “There is a stubbornness about me that never can bear to be frightened at the will of others. My courage always rises at every attempt to intimidate me.” - Pride and Prejudice, 1813 <br><br>
+                “If it's a story I'm telling, then I have control over the ending... But if it's a story, even in my head, I must be telling it to someone.
+                 You don't tell a story only to yourself. There's always someone else. Even when there is no one.”
+                - Margaret Atwood, The Handmaid’s Tale<br><br>
+                “I have the choice of being constantly active and happy or introspectively passive and sad. Or I can go mad by ricocheting in between.” - Sylvia Plath, The Unabridged Journals of Sylvia Plath
+
+
+            </p>
+            <div id="used">
+                <h2>Buy</h2>
+                <a><button class="btn_one" onclick="window.open('https://www.wob.com/en-gb')" target ="_blank">World Of Books</button></a>
+                <a><button class="btn_one" onclick="window.open('https://www.waterstones.com')" target ="_blank">Waterstones</button></a>
+                <a><button class="btn_one" onclick="window.open('https://www.foyles.co.uk/')" target ="_blank">Foyles</button></a>
+                <a><button class="btn_one" onclick="window.open('https://wordery.com')" target ="_blank">Wordery</button></a>
+                <a><button class="btn_one" onclick="window.open('https://www.best-book-price.co.uk')" target ="_blank">Cheap Book Finder</button></a>
+
+                <h2>Second Hand</h2>
+                <a><button class="btn_one" onclick="window.open('https://www.abebooks.co.uk/UsedBooks.shtml')" target ="_blank">Abe Books</button></a>
+                <a><button class="btn_one" onclick="window.open('https://bookswap.co.uk')" target ="_blank">Book Swap UK</button></a>
+                
+                
+                <h2>social</h2>
+                <a><button class="btn_one" onclick="window.open('https://www.goodreads.com')" target ="_blank">Goodreads</button></a>
+                <a><button class="btn_one" onclick="window.open('https://www.librarything.com')" target ="_blank">LibraryThing</button></a>
+                <a><button class="btn_one" onclick="window.open('https://archiveofourown.org')" target ="_blank">Archive of Out Own</button></a>
+            </div>
+        </section>
+    </div>
+    <div id="Pinterest_container" class="container">
+            <div onclick="closePinterest()"><i class="fas fa-angle-left"></i></div>
+            <h1>this is a place to find pinterest tags easily.</h1>
+            <section>
+        
+                <p>
+                    <h2>Happy</h2>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Happy%20Cats&rs=typed')" target ="_blank">Cats</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Books&rs=typed')" target ="_blank">Books</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Cottage%20Core&rs=typed')" target ="_blank">Cottage Core</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Edinburgh&rs=typed')" target ="_blank">Edinburgh</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Library&rs=typed')" target ="_blank">Libraries</button></a>
+
+                    <h2>Sad</h2>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Sad%20Cats&rs=typed')" target ="_blank">Cats</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Sad%20Books&rs=typed')" target ="_blank">Books</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Sad%20Cottage%20Core&rs=typed')" target ="_blank">Cottage Core</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Rainy%20Edinburgh&rs=typed')" target ="_blank">Edinburgh</button></a>
+                    
+                    <h2>Comforting</h2>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Comforting%20Cats&rs=typed')" target ="_blank">Cats</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Anne%20with%20an%20e&rs=typed')" target ="_blank">AWAE</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Normal%20People&rs=typed')" target ="_blank">Nomral People</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Comforting%20Quotes&rs=typed')" target ="_blank">Quotes</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Animal%20Hugging&rs=typedd')" target ="_blank">Animals Hugging</button></a>
+
+                    <h2>Hungry</h2>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Recipes&rs=typed')" target ="_blank">Recipes</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Mangos&rs=typed')" target ="_blank">Mangos</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Veggitarian%20Meals&rs=typed')" target ="_blank">Veggie Stuff</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Boobies&rs=typed')" target ="_blank">Boobies</button></a>
+
+                    <h2>Animals</h2>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Cute&rs=typed')" target ="_blank">Cute</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Cats&rs=typed')" target ="_blank">Cats</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Kittens&rs=typed')" target ="_blank">Kittens</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Dogs&rs=typed')" target ="_blank">Dogs</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Cows&rs=typed')" target ="_blank">Cows</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Bunnies&rs=typed')" target ="_blank">Bunnies</button></a>
+
+                    <h2>Seasonal</h2>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Seasonal%20Cats&rs=typed')" target ="_blank">Cats</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Spring&rs=typed')" target ="_blank">Spring</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Summer&rs=typed')" target ="_blank">Summer</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Autumn&rs=typed')" target ="_blank">Autumn</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Winter&rs=typed')" target ="_blank">Winter </button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Halloween&rs=typed')" target ="_blank">Halloween</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Christmas&rs=typed')" target ="_blank">Christmas</button></a>
+                    
+                    <h2>Random Topics</h2>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Harry%20Potter&rs=typed')" target ="_blank">Harry Potter</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Cool%20History%20Facts&rs=typed')" target ="_blank">History</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Wholesome&rs=typed')" target ="_blank">Wholesome</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Hozier&rs=typed')" target ="_blank">Hozier</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Paolo%20Nutini&rs=typed')" target ="_blank">Paolo</button></a>
+                    <a><button class="btn_one" onclick="window.open('https://www.pinterest.co.uk/search/pins/?q=Bedroom%20Ideas&rs=typed')" target ="_blank">Bedroom Ideas</button></a>
+                    
+                    
+                </p>
+                <p>
+                    </p>
+            </section>
+            <section>
+                <h2>Pinterest Link Page</h2>
+                <p>
+                    I hope you enjoy
+                </p>
+            </section>
+        </div>
+          <div id="fun_container" class="container">
+            <div onclick="closefun()"><i class="fas fa-angle-down"></i></div>
+            <h1>coding help.</h1>
+            <section>
+                <h2>I'm not sure what you would need here, but ask me and I can easily add</h2>
+
+                <div id="youtube_links" class="container_YT">
+                    Vectors and Matrices
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/q8VBUqBm1ts?si=cIQ2_WSYXVtXL_mG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br><br>
+                    
+                    Scalars, Vectors, and Matrices: What's the Difference?
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NxiIVxa9u5c?si=uhc4f22PVzrKgR2N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br><br>
+
+                    intervals and linspace
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XSLmjW3clsI?si=peqOo5Oj4AdHoXod"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br><br>
+                </div>
+            </section>
+        </div>
+        <div id="footer">
+            made by the amazing <br> <a href="https://www.instagram.com/sam.devinett/" target="_blank">Sam Devinett</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
 </html>
