@@ -23,23 +23,24 @@
         <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
         <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
         <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+        
     </div>
     <a id="Pinterest" onclick="showpinterest()" class="animated fadeIn" style="animation-delay:2.2s;">Pinterest Options</a>
     <a id="book" onclick="showbooks()" class="animated fadeIn" style="animation-delay:2.2s;">Book Options</a>
     <a id="fun" onclick="showfun()" class="animated fadeIn" style="animation-delay:2.2s;">Coding Help</a>
+    <a id="music" onclick="showmusic()" class="animated fadeIn" style="animation-delay:2.2s;">Music</a>
+
     <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
         <h1>Isobel's Personal Site</h1>
         <h2> Engineer / Book Reader / Cat Lover</h2>
+        
         <div id="menu">
             <a onclick="showpinterest()">Pinterest</a>
             <a onclick="showbooks()">Books</a>
             <a onclick="showfun()">Coding</a>
-
-
-      <!-- <div class = "container_hey"><a><button class="btn_hey" onclick="window.open('systemClock.png')" target ="_blank">Secret Button</button></a></div>-->
-
-
+            <a onclick="showmusic()">Music</a>
         </div>
+
         <table>
                 <tr>
                     <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook" onclick="window.open('https://www.facebook.com')"></i></a></td>
@@ -49,6 +50,7 @@
                 </tr>
         </table>
     </div>
+
     <div id="book_container" class="container">
         <div onclick="closebook()"><i class="fas fa-angle-right"></i></div>
         <h1>books.</h1>
@@ -153,8 +155,10 @@
                 </p>
             </section>
         </div>
+
+
           <div id="fun_container" class="container">
-            <div onclick="closefun()"><i class="fas fa-angle-down"></i></div>
+            <div onclick="closefun()"><i class="fas fa-angle-left"></i></div>
             <h1>coding.</h1>
 
             <section>
@@ -162,9 +166,6 @@
                 <h2>I'm not sure what you would need here, but ask me and I can easily add</h2>
                 <a href ="https://github.com/Weaponised115/Isobel-s-Website">If you want to see how I made this site, the code is all here. </ahref></a>
                 <div id="youtube_links" class="container_YT">
-                   <!--  Look for a hidden text that you can click on in the homescreen<br>
-                    <p>It looks like the below text</p>
-                    <p style="font-size:6px; color:white" color:white >looks like this</p><br>-->
                     Vectors and Matrices
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/q8VBUqBm1ts?si=cIQ2_WSYXVtXL_mG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br><br>
                     
@@ -173,10 +174,24 @@
 
                     Intervals and linspace
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XSLmjW3clsI?si=peqOo5Oj4AdHoXod"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br><br>
+                 </div>
+                </section>
+          </div>
+            </div>
+
+        <div id="music_container" class="container">
+            <div onclick="closemusic()"><i class="fas fa-angle-up"></i></div>
+            <h1>music.</h1>
+            You can't leave this page for some reason :(
+            <section>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4qWx8RkeGACtHNudq1C9wl?utm_source=generator&theme=0" width="100%" height="800" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </section>
+        </div>
+
         <div id="footer">
             Made by the amazing <br> <a href="https://www.instagram.com/sam.devinett/" target="_blank">Sam Devinett</a>
         </div>
+        
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>

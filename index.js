@@ -1,3 +1,4 @@
+
 function showpinterest(){
     $("#Pinterest_container").css("display","inherit");
     $("#Pinterest_container").addClass("animated slideInLeft");
@@ -40,6 +41,22 @@ function closefun(){
         $("#fun_container").css("display","none");
     },800);
 }
+function showmusic(){
+    $("#music_container").css("display","inherit");
+    $("#music_container").addClass("animated slideInUp");
+    setTimeout(function(){
+        $("#music_container").removeClass("animated slideInUp");
+    },800);
+}
+function closeMusic(){
+    $("#music_container").addClass("animated slideOutUp");
+    setTimeout(function(){
+        $("#music_container").removeClass("animated slideOutUp");
+        $("#music_container").css("display","none");
+    },800);
+}
+
+
 setTimeout(function(){
     $("#loading").addClass("animated fadeOut");
     setTimeout(function(){
@@ -49,5 +66,6 @@ setTimeout(function(){
       $("#Pinterest").removeClass("animated fadeIn");
       $("#fun").removeClass("animated fadeIn");
       $("#book").removeClass("animated fadeIn");
+      $("#music").removeClass("animated fadeIn")
     },1000);
 },1500);
